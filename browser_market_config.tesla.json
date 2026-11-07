@@ -1,0 +1,107 @@
+{
+  "database": "browser_market_prices.sqlite3",
+  "user_data_dir": "browser_profile",
+  "headless": false,
+  "navigation_timeout_ms": 30000,
+  "settle_ms": 5000,
+  "scrolls": 3,
+  "delay_between_pages_seconds": 4,
+  "products": [
+    {
+      "name": "Tesla T10",
+      "target_price": 1250,
+      "min_alert_price": 900,
+      "alert_on_new_listing": false,
+      "include_keywords": ["T10"],
+      "exclude_keywords": [
+        "维修", "空板", "散热器", "资料", "整机", "租赁", "收购",
+        "驱动", "辅导", "远程安装", "挡板", "挡片", "风扇", "导风罩", "散热",
+        "配件", "线材", "电源线", "供电线", "转接线", "代跑", "算力", "出租",
+        "租用", "回收", "议价", "询价", "非标价", "改装", "复刻", "套件",
+        "8GB", "8g", "8G显存", "8GB 1年", "4GB", "4gb", "4G", "4g",
+        "C1060", "c1060", "C 1060", "c 1060", "1060",
+        "x99", "主板", "内存", "2666", "意勿拍", "勿拍", "差价", "专拍", "定金",
+        "虚拟机", "pve", "vgpu", "授权", "部署", "工作室", "网络优化", "硬件选型", "调优"
+      ],
+      "sources": [
+        {
+          "platform": "闲鱼搜索",
+          "query": "Tesla T10 显卡",
+          "url": "https://www.goofish.com/search?q=Tesla%20T10%20%E6%98%BE%E5%8D%A1"
+        },
+        {
+          "platform": "淘宝搜索",
+          "query": "Tesla T10 显卡",
+          "url": "https://s.taobao.com/search?q=Tesla%20T10%20%E6%98%BE%E5%8D%A1"
+        },
+        {
+          "platform": "拼多多搜索",
+          "query": "Tesla T10 显卡",
+          "url": "https://mobile.yangkeduo.com/search_result.html?search_key=Tesla%20T10%20%E6%98%BE%E5%8D%A1"
+        }
+      ]
+    },
+    {
+      "name": "Tesla T40",
+      "alert_on_new_listing": true,
+      "alert_on_available": true,
+      "include_keywords": ["T40"],
+      "exclude_keywords": [
+        "维修", "空板", "散热器", "资料", "整机", "租赁", "收购",
+        "驱动", "辅导", "远程安装", "挡板", "挡片", "风扇", "导风罩", "散热",
+        "配件", "线材", "电源线", "供电线", "转接线", "代跑", "算力", "出租",
+        "租用", "回收", "议价", "询价", "非标价", "改装", "复刻", "套件",
+        "A10", "K8", "K20", "K40", "M40", "P4", "P10", "P40",
+        "T40S", "主芯片", "CPU", "部署", "webui", "Stable diffusion", "技术支持", "服务器部署"
+      ],
+      "sources": [
+        {
+          "platform": "闲鱼搜索",
+          "query": "Tesla T40 显卡",
+          "url": "https://www.goofish.com/search?q=Tesla%20T40%20%E6%98%BE%E5%8D%A1"
+        },
+        {
+          "platform": "淘宝搜索",
+          "query": "Tesla T40 显卡",
+          "url": "https://s.taobao.com/search?q=Tesla%20T40%20%E6%98%BE%E5%8D%A1"
+        },
+        {
+          "platform": "拼多多搜索",
+          "query": "Tesla T40 显卡",
+          "url": "https://mobile.yangkeduo.com/search_result.html?search_key=Tesla%20T40%20%E6%98%BE%E5%8D%A1"
+        }
+      ]
+    },
+    {
+      "name": "NVIDIA A100",
+      "target_price": 10000,
+      "min_alert_price": 7000,
+      "include_keywords": ["A100"],
+      "exclude_keywords": [
+        "维修", "空板", "散热器", "资料", "整机", "租赁", "收购",
+        "驱动", "辅导", "远程安装", "挡板", "挡片", "风扇", "导风罩", "散热",
+        "配件", "线材", "电源线", "供电线", "转接线", "代跑", "算力", "出租",
+        "租用", "回收", "议价", "询价", "非标价", "改装", "复刻", "套件",
+        "服务器出租", "GPU服务器", "按天", "按月", "免费测",
+        "V100", "v100", "SXM3", "sxm3", "Casio", "计算器", "DSE", "HKEAA", "请a100", "请A100"
+      ],
+      "sources": [
+        {
+          "platform": "闲鱼搜索",
+          "query": "A100 计算卡",
+          "url": "https://www.goofish.com/search?q=A100%20%E8%AE%A1%E7%AE%97%E5%8D%A1"
+        },
+        {
+          "platform": "淘宝搜索",
+          "query": "A100 计算卡",
+          "url": "https://s.taobao.com/search?q=A100%20%E8%AE%A1%E7%AE%97%E5%8D%A1"
+        },
+        {
+          "platform": "拼多多搜索",
+          "query": "A100 计算卡",
+          "url": "https://mobile.yangkeduo.com/search_result.html?search_key=A100%20%E8%AE%A1%E7%AE%97%E5%8D%A1"
+        }
+      ]
+    }
+  ]
+}

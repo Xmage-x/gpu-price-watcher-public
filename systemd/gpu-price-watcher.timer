@@ -1,0 +1,11 @@
+[Unit]
+Description=Run GPU price watcher every 10 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=10min
+RandomizedDelaySec=90
+Persistent=true
+
+[Install]
+WantedBy=timers.target

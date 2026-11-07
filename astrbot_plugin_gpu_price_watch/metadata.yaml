@@ -1,0 +1,13 @@
+name: "astrbot_plugin_gpu_price_watch"
+display_name: "GPU 价格监控"
+author: "Xmage-x"
+version: "0.1.0"
+desc: "监控 Tesla T10、Tesla T40、A100 的电商搜索结果，并通过 AstrBot 主动推送提醒。"
+repo: ""
+astrbot_version: ">=4.23.1"
+support_platforms:
+  - weixin_personal
+  - aiocqhttp
+  - qq_official
+  - telegram
+  - wecom

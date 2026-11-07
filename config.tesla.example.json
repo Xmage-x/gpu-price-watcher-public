@@ -1,0 +1,98 @@
+{
+  "database": "tesla_gpu_prices.sqlite3",
+  "timeout_seconds": 20,
+  "delay_between_requests_seconds": 4,
+  "cooldown_minutes": 60,
+  "notifications": {
+    "stdout": true,
+    "webhook": {
+      "enabled": false,
+      "url": "https://example.com/webhook",
+      "headers": {}
+    },
+    "astrbot": {
+      "enabled": false,
+      "mode": "im",
+      "base_url": "http://127.0.0.1:6185",
+      "api_key": "abk_xxx",
+      "umo": "webchat:FriendMessage:YOUR_SESSION_ID"
+    }
+  },
+  "products": [
+    {
+      "name": "Tesla T10 24GB",
+      "currency": "CNY",
+      "target_price": 1250,
+      "alert_on_drop_pct": 3,
+      "include_keywords": ["T10"],
+      "exclude_keywords": ["维修", "空板", "散热器", "资料", "整机", "租赁"],
+      "listings": [
+        {
+          "platform": "闲鱼搜索",
+          "url": "https://www.goofish.com/search?q=Tesla%20T10%20%E6%98%BE%E5%8D%A1",
+          "currency": "CNY"
+        },
+        {
+          "platform": "淘宝搜索",
+          "url": "https://s.taobao.com/search?q=Tesla%20T10%20%E6%98%BE%E5%8D%A1",
+          "currency": "CNY"
+        },
+        {
+          "platform": "拼多多搜索",
+          "url": "https://mobile.yangkeduo.com/search_result.html?search_key=Tesla%20T10%20%E6%98%BE%E5%8D%A1",
+          "currency": "CNY"
+        }
+      ]
+    },
+    {
+      "name": "Tesla T40",
+      "currency": "CNY",
+      "alert_on_available": true,
+      "alert_on_drop_pct": 1,
+      "include_keywords": ["T40"],
+      "exclude_keywords": ["维修", "空板", "散热器", "资料", "整机", "租赁"],
+      "listings": [
+        {
+          "platform": "闲鱼搜索",
+          "url": "https://www.goofish.com/search?q=Tesla%20T40%20%E6%98%BE%E5%8D%A1",
+          "currency": "CNY"
+        },
+        {
+          "platform": "淘宝搜索",
+          "url": "https://s.taobao.com/search?q=Tesla%20T40%20%E6%98%BE%E5%8D%A1",
+          "currency": "CNY"
+        },
+        {
+          "platform": "拼多多搜索",
+          "url": "https://mobile.yangkeduo.com/search_result.html?search_key=Tesla%20T40%20%E6%98%BE%E5%8D%A1",
+          "currency": "CNY"
+        }
+      ]
+    },
+    {
+      "name": "NVIDIA A100",
+      "currency": "CNY",
+      "target_price": 10000,
+      "alert_on_drop_pct": 5,
+      "include_keywords": ["A100"],
+      "exclude_keywords": ["维修", "空板", "散热器", "资料", "整机", "租赁"],
+      "listings": [
+        {
+          "platform": "闲鱼搜索",
+          "url": "https://www.goofish.com/search?q=A100%20%E8%AE%A1%E7%AE%97%E5%8D%A1",
+          "currency": "CNY"
+        },
+        {
+          "platform": "淘宝搜索",
+          "url": "https://s.taobao.com/search?q=A100%20%E8%AE%A1%E7%AE%97%E5%8D%A1",
+          "currency": "CNY"
+        },
+        {
+          "platform": "拼多多搜索",
+          "url": "https://mobile.yangkeduo.com/search_result.html?search_key=A100%20%E8%AE%A1%E7%AE%97%E5%8D%A1",
+          "currency": "CNY"
+        }
+      ]
+    }
+  ]
+}

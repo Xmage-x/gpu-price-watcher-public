@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.png
+*.pass
+vnc_password.txt
+browser_profile/
+browser_market_backoff.json
+config.json
+browser_market_config.json
+.env

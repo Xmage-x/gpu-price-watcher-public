@@ -1,0 +1,61 @@
+{
+  "database": "prices.sqlite3",
+  "timeout_seconds": 20,
+  "delay_between_requests_seconds": 2,
+  "cooldown_minutes": 360,
+  "notifications": {
+    "stdout": true,
+    "webhook": {
+      "enabled": false,
+      "url": "https://example.com/webhook",
+      "headers": {}
+    },
+    "astrbot": {
+      "enabled": false,
+      "mode": "im",
+      "base_url": "http://127.0.0.1:6185",
+      "api_key": "abk_xxx",
+      "umo": "webchat:FriendMessage:YOUR_SESSION_ID"
+    }
+  },
+  "products": [
+    {
+      "name": "RTX 5070 Ti 16GB",
+      "currency": "CNY",
+      "target_price": 4999,
+      "alert_on_drop_pct": 3,
+      "include_keywords": ["5070", "Ti"],
+      "exclude_keywords": ["二手", "整机", "矿卡"],
+      "listings": [
+        {
+          "platform": "JD",
+          "url": "https://item.jd.com/替换成商品ID.html",
+          "currency": "CNY",
+          "regex": "\"price\"\\s*:\\s*\"?(?P<price>[0-9][0-9,]*(?:\\.[0-9]{1,2})?)"
+        },
+        {
+          "platform": "Amazon",
+          "url": "https://www.amazon.com/dp/替换成ASIN",
+          "currency": "USD",
+          "selector": ".a-price .a-offscreen"
+        }
+      ]
+    },
+    {
+      "name": "RTX 4070 Super 12GB",
+      "currency": "CNY",
+      "target_price": 3799,
+      "alert_on_drop_pct": 4,
+      "include_keywords": ["4070", "Super"],
+      "exclude_keywords": ["二手", "整机", "准系统"],
+      "listings": [
+        {
+          "platform": "Custom",
+          "url": "https://example.com/product-page",
+          "currency": "CNY",
+          "selector": ".price"
+        }
+      ]
+    }
+  ]
+}

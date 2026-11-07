@@ -1,0 +1,9 @@
+[Unit]
+Description=GPU price watcher
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/gpu-price-watcher
+ExecStart=/usr/bin/python3 /opt/gpu-price-watcher/gpu_price_watcher.py --config /opt/gpu-price-watcher/config.json
